@@ -5,16 +5,67 @@
 
             <!--Card image-->
             <div class="view gradient-card-header blue darken-2 ">
-                <h4 class="h4-responsive text-white">Regular map</h4>
+                <h4 class="h4-responsive text-white">Órden #1</h4>
             </div>
             <!--/Card image-->
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'roadmap'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
+                <table class="table">
+                    <thead>
+                    <tr style="align-items: center">
+                        <th>Material Directo</th>
+                        <th>Costo MD $</th>
+                        <th>Costo MOD $</th>
+                        <th>CIF</th>
+                        <th>Costo CIF $</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Camisas</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Depreciación Maq</td>
+                        <td>$10000</td>
+                      
+                    </tr>
+                    <tr>
+                       
+                        <td>Materias primas</td>
+                        <td>$45000</td>
+                        <td>$1000</td>
+                        <td>Suministros Fabrica</td>
+                        <td>$15000</td>
+                       
+                    </tr>
+                    <tr>
+                       
+                        <td>Tela</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Mano de obra indirecta</td>
+                        <td>$50000</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Total</td>
+                        <td>$135000</td>
+                        <td>$11000</td>
+                        <td></td>
+                        <td>$21000</td>
+                    </tr>
+                    </tbody>
+                </table>
 
+                <div class="modal-footer justify-content-center">
+                    <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MOD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar CIF</a>
+                  </div>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>
@@ -26,16 +77,69 @@
 
             <!--Card image-->
             <div class="view gradient-card-header  blue darken-2">
-                <h4 class="h4-responsive text-white">Hybrid map</h4>
+                <h4 class="h4-responsive text-white">Órden #2</h4>
             </div>
             <!--/Card image-->
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'hybrid'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
+                <table class="table">
+                    <thead>
+                    <tr style="align-items: center">
+                      
+                        <th>Material Directo</th>
+                        <th>Costo MD $</th>
+                        <th>Costo MOD $</th>
+                        <th>CIF</th>
+                        <th>Costo CIF $</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                       
+                        <td>Camisas</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Depreciación Maq</td>
+                        <td>$10000</td>
+                      
+                    </tr>
+                    <tr>
+                      
+                        <td>Materias primas</td>
+                        <td>$45000</td>
+                        <td>$1000</td>
+                        <td>Suministros Fabrica</td>
+                        <td>$15000</td>
+                       
+                    </tr>
+                    <tr>
+                       
+                        <td>Tela</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Mano de obra indirecta</td>
+                        <td>$50000</td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Total</td>
+                        <td>$135000</td>
+                        <td>$11000</td>
+                        <td></td>
+                        <td>$21000</td>
+                    </tr>
+                    </tbody>
+                </table>
 
+                <div class="modal-footer justify-content-center">
+                    <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MOD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar CIF</a>
+                  </div>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>
@@ -49,16 +153,68 @@
 
             <!--Card image-->
             <div class="view gradient-card-header  blue darken-2">
-                <h4 class="h4-responsive text-white">Satelite map</h4>
+                <h4 class="h4-responsive text-white">Órden #3</h4>
             </div>
             <!--/Card image-->
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'satellite'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
-
+                <table class="table">
+                    <thead>
+                    <tr style="align-items: center">
+                      
+                        <th>Material Directo</th>
+                        <th>Costo MD $</th>
+                        <th>Costo MOD $</th>
+                        <th>CIF</th>
+                        <th>Costo CIF $</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                       
+                        <td>Camisas</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Depreciación Maq</td>
+                        <td>$10000</td>
+                      
+                    </tr>
+                    <tr>
+                      
+                        <td>Materias primas</td>
+                        <td>$45000</td>
+                        <td>$1000</td>
+                        <td>Suministros Fabrica</td>
+                        <td>$15000</td>
+                       
+                    </tr>
+                    <tr>
+                       
+                        <td>Tela</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Mano de obra indirecta</td>
+                        <td>$50000</td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Total</td>
+                        <td>$135000</td>
+                        <td>$11000</td>
+                        <td></td>
+                        <td>$21000</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="modal-footer justify-content-center">
+                    <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MOD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar CIF</a>
+                  </div>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>
@@ -70,16 +226,68 @@
 
             <!--Card image-->
             <div class="view gradient-card-header  blue darken-2">
-                <h4 class="h4-responsive text-white">Terrains map</h4>
+                <h4 class="h4-responsive text-white">órden #4</h4>
             </div>
             <!--/Card image-->
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'terrain'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
-
+                <table class="table">
+                    <thead>
+                    <tr style="align-items: center">
+                      
+                        <th>Material Directo</th>
+                        <th>Costo MD $</th>
+                        <th>Costo MOD $</th>
+                        <th>CIF</th>
+                        <th>Costo CIF $</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                       
+                        <td>Camisas</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Depreciación Maq</td>
+                        <td>$10000</td>
+                      
+                    </tr>
+                    <tr>
+                      
+                        <td>Materias primas</td>
+                        <td>$45000</td>
+                        <td>$1000</td>
+                        <td>Suministros Fabrica</td>
+                        <td>$15000</td>
+                       
+                    </tr>
+                    <tr>
+                       
+                        <td>Tela</td>
+                        <td>$45000</td>
+                        <td>$5000</td>
+                        <td>Mano de obra indirecta</td>
+                        <td>$50000</td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Total</td>
+                        <td>$135000</td>
+                        <td>$11000</td>
+                        <td></td>
+                        <td>$21000</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="modal-footer justify-content-center">
+                    <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar MOD</a>
+                   <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Agregar CIF</a>
+                  </div>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>
@@ -90,10 +298,10 @@
     <div class="col-md-10">
         <!--Section: Docs link-->
         <section class="pb-4 pt-5">
-            <panel header="Full documentation" color="primary-color">
-                <p class="card-text">Read the full documentation for these components.</p>
+            <panel header="INFORMACIÓN IMPORTANTE" color="primary-color">
+                <p class="card-text">Quieres agregar una nueva orden?</p>
                 <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
-                   class="waves-effect waves-light">Learn more</a>
+                   class="waves-effect waves-light">Agregar una Nueva Órden</a>
             </panel>
         </section>
         <!--/.Section: Docs link-->
