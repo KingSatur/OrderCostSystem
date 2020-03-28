@@ -4,9 +4,12 @@ import { ModalsComponent } from './views/modals/modals.component';
 import { BasicTableComponent } from './views/tables/basic-table/basic-table.component';
 import { Profile1Component } from './views/profile/profile1/profile1.component';
 import { RouterModule, Route } from '@angular/router';
-import { ModuleWithProviders } from '@angular/core';
+import { ModuleWithProviders} from '@angular/core';
 import { NotFoundComponent } from './views/errors/not-found/not-found.component';
 import { Dashboard1Component } from './views/dashboards/dashboard1/dashboard1.component';
+import { CifRealesComponent } from './components/cif-reales/cif-reales.component';
+import { EditprofileComponent } from './components/editprofile/editprofile.component';
+import { ReviewProfileComponent } from './components/review-profile/review-profile.component';
 
 
 const routes: Route[] = [
@@ -18,8 +21,11 @@ const routes: Route[] = [
   },
   { path: 'profiles', children:
     [
-      { path: 'profile1', component: Profile1Component },
+      {path: 'editProfile', component:EditprofileComponent},
+      {path: 'reviewProfile', component:ReviewProfileComponent}
     ]
+    ,
+    component : Profile1Component
   },
   { path: 'tables', children:
     [
@@ -31,7 +37,7 @@ const routes: Route[] = [
       { path: 'map1', component: Map1Component},
     ]
   },
-
+  { path: 'cifR', component:CifRealesComponent},
   { path: 'modals', component: ModalsComponent},
   { path: '**', component: NotFoundComponent },
 

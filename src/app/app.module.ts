@@ -13,10 +13,16 @@ import { ErrorModule } from './views/errors/error.module';
 
 // main layout
 import { NavigationModule } from './main-layout/navigation/navigation.module';
+import { CifRealesComponent } from './components/cif-reales/cif-reales.component';
+import { EditprofileComponent } from './components/editprofile/editprofile.component';
+import { ReviewProfileComponent } from './components/review-profile/review-profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CifRealesComponent,
+    EditprofileComponent,
+    ReviewProfileComponent
   ],
   imports: [
     AgmCoreModule.forRoot({
